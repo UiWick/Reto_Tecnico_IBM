@@ -1,6 +1,6 @@
 FROM node:9-slim
-WORKDIR /app
-COPY package.json /app
+WORKDIR /rest-node-js
+COPY package.json /rest-node-js
 RUN npm install
-COPY . /app
+COPY . /rest-node-js
 CMD ["npm","start"]
